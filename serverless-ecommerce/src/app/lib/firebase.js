@@ -21,4 +21,5 @@ const provider = new GoogleAuthProvider();
 const analytics = typeof window !== "undefined" ? getAnalytics(app) : null;
 
 // Export modules
-export { app, auth, provider, analytics };
+export { auth, provider, analytics };
+export default app;
