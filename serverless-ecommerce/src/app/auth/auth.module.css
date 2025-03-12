@@ -1,0 +1,14 @@
+.container {
+    background-color: #f8f8f8;
+    color: black;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+  }

@@ -1,0 +1,46 @@
+/* projects.module.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.projectList {
+    list-style: none;
+    padding: 0;
+}
+
+.projectItem {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.projectItem:hover {
+    transform: translateY(-3px);
+}
+
+.projectLink {
+    text-decoration: none;
+    color: #0070f3;
+    font-weight: bold;
+}
+
+.projectLink:hover {
+    text-decoration: underline;
+}
