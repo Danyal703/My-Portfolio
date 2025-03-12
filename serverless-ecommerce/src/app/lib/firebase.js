@@ -16,8 +16,10 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-export const auth = getAuth(app);
-export const provider = new GoogleAuthProvider();
-export const analytics = typeof window !== "undefined" ? getAnalytics(app) : null;
+const auth = getAuth(app);
+const provider = new GoogleAuthProvider();
+const analytics = typeof window !== "undefined" ? getAnalytics(app) : null;
 
-export { app };
+// Export modules
+export { auth, provider, analytics };
+export default app;

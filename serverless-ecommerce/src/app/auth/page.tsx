@@ -1,10 +1,8 @@
 "use client";
 import { useState, useEffect } from "react";
-import { auth } from "@/app/lib/firebase"; 
+import { auth, provider } from "@/app/lib/firebase"; 
 import { Auth, GoogleAuthProvider, onAuthStateChanged as firebaseOnAuthStateChanged, signInWithPopup, signOut, User } from "firebase/auth"; // Import necessary functions and types
 import styles from "./auth.module.css"; // Import styles
-
-const provider = new GoogleAuthProvider(); // Initialize the provider
 
 export default function AuthPage() {
     const [user, setUser] = useState<User | null>(null);
